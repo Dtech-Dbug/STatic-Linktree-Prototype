@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<!-- <link
+			rel="stylesheet"
+			href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+			integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
+			crossorigin="anonymous"
+		/> -->
+
+		<title>LinkInBio</title>
+	</head>
+	<body>
+		<div id="particles-js" style="height: 100vh; background: black"></div>
+
+		<div class="container-content">
+			<header>
+				<h1>LinkInBio</h1>
+
+				<h3>
+					<b><i> - All My Links @ One Place</i></b>
+				</h3>
+			</header>
+
+			<body class="content">
+				<div class="img">
+					<img src="./images//IMG_20210404_143813_773.jpg" alt="" />
+				</div>
+
+				<div class="cta-btns">
+					<a href="#">
+						<button>
+							<i class="fa fa-dochub">Web</i>
+						</button>
+					</a>
+					<a href="#">
+						<button>
+							<i class="fa fa-github"> </i>
+							<b>Github</b>
+						</button>
+					</a>
+					<a href="#">
+						<button>
+							<i class="fa fa-twitter"></i>
+							<b>Twitter</b>
+						</button>
+					</a>
+					<a href="#">
+						<button>
+							<i class="fa fa-spotify"></i>
+							<b>Spotify</b>
+						</button>
+					</a>
+				</div>
+			</body>
+
+			<hr />
+
+			<footer>
+				<div class="footer-header">
+					<i class="fa fa-copyright"></i>
+					<b>Dwaipayan | 2021</b>
+				</div>
+
+				<div class="footer-footer">
+					<i> Made with ❤ using pure HTML, CSS</i>
+				</div>
+			</footer>
+		</div>
+
+		<script src="particles.js"></script>
+
+		<script>
+			particlesJS.load("particles-js", "particles.json", function () {
+				console.log("callback - particles.js config loaded");
+			});
+		</script>
+	</body>
+</html>
