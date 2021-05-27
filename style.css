@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
-
+/*background: rgba(0, 0, 0, 0.4);*/
 html {
 	font-size: 80%;
 	font-family: "Squada One", cursive;
+	height: 100vh;
 	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
 }
 
 header {
 	text-align: center;
-	margin-bottom: 3rem;
+
 	font-family: "Squada One", cursive;
 	color: white;
 }
@@ -19,8 +22,6 @@ header h1 {
 body {
 	text-align: center;
 	height: 100vh;
-	margin: 0;
-	padding: 0;
 }
 
 .container-content {
@@ -28,16 +29,13 @@ body {
 	top: 50%;
 	right: 50%;
 	transform: translate(50%, -50%);
-
-	max-width: 90%;
+	max-width: 60%;
+	max-height: 90%;
 	padding: 2em 2em;
-	background: rgba(0, 0, 0, 0.4);
+	background: red;
 	text-shadow: 0px 0px 2px #131415;
-}
-
-.content {
-	margin: 2rem 1rem;
-	height: 50%;
+	margin-bottom: 1.5rem;
+	margin-top: 0.6rem;
 }
 
 img {
@@ -66,5 +64,14 @@ img {
 
 footer {
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1rem;
+}
+
+.icon {
+	height: 0.9rem;
+	width: auto;
+}
+.icon-user {
+	height: 1.5rem;
+	width: auto;
 }
