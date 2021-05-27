@@ -3,6 +3,7 @@
 html {
 	font-size: 80%;
 	font-family: "Squada One", cursive;
+	scroll-behavior: smooth;
 }
 
 header {
