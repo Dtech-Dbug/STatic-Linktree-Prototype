@@ -56,6 +56,29 @@ body {
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: box-shadow-animation 15s infinite;
+}
+
+@keyframes box-shadow-animation {
+  0% {
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.687);
+  }
+
+  20% {
+    box-shadow: 0 8px 32px 0 rgba(38, 196, 24, 0.687);
+  }
+  40% {
+    box-shadow: 0 8px 32px 0 rgba(251, 255, 21, 0.884);
+  }
+  60% {
+    box-shadow: 0 8px 32px 0 rgba(235, 71, 7, 0.986);
+  }
+  80% {
+    box-shadow: 0 8px 32px 0 rgba(96, 5, 40, 0.687);
+  }
+  100% {
+    box-shadow: 0 8px 32px 0 rgba(46, 225, 228, 0.687);
+  }
 }
 
 img {
@@ -69,20 +92,40 @@ img {
 }
 
 .cta-btns button {
-  background: linear-gradient(
-    to bottom left,
-    rgb(19, 18, 18),
-    rgb(26, 182, 164),
-    rgba(31, 38, 135, 0.687) 45px
-  );
+  background: rgba(228, 72, 72, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   width: 60%;
   height: 3rem;
-  box-shadow: 1px 2px 2px white;
   border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
   border-right: 0;
   margin: 1.3rem 1rem;
+  animation: bg-animation 15s infinite;
 }
+@keyframes bg-animation {
+  0% {
+    background: rgba(31, 38, 135, 0.687);
+  }
 
+  20% {
+    background: rgba(38, 196, 24, 0.687);
+  }
+  40% {
+    background: rgba(251, 255, 21, 0.884);
+  }
+  60% {
+    background: rgba(235, 71, 7, 0.986);
+  }
+  80% {
+    background: rgba(96, 5, 40, 0.687);
+  }
+  100% {
+    background: rgba(46, 225, 228, 0.687);
+  }
+}
 footer {
   color: white;
   font-size: 1rem;
