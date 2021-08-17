@@ -81,6 +81,28 @@ body {
   }
 }
 
+@keyframes box-shadow-animation-cta {
+  0% {
+    box-shadow: 0 3px 6px 0 rgba(31, 38, 135, 0.687);
+  }
+
+  20% {
+    box-shadow: 0 3px 6px 0 rgba(38, 196, 24, 0.687);
+  }
+  40% {
+    box-shadow: 0 3px 6px 0 rgba(251, 255, 21, 0.884);
+  }
+  60% {
+    box-shadow: 0 3px 6px 0 rgba(235, 71, 7, 0.986);
+  }
+  80% {
+    box-shadow: 0 3px 6px 0 rgba(96, 5, 40, 0.687);
+  }
+  100% {
+    box-shadow: 0 3px 6px 0 rgba(46, 225, 228, 0.687);
+  }
+}
+
 img {
   height: 6rem;
   width: 6rem;
@@ -98,33 +120,45 @@ img {
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); */
-  border: 2px solid rgba(31, 38, 135, 0.687);
+  /* border: 2px solid rgba(31, 38, 135, 0.687); */
+  background: rgba(127, 114, 114, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
   width: 60%;
   height: 3rem;
   border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
   border-right: 0;
   margin: 1.3rem 1rem;
-  animation: bg-animation 15s infinite;
+  background: rgba(14, 13, 13, 0.2);
+  box-shadow: 0 3px 6px 0 rgba(31, 38, 135, 0.687);
+  animation: box-shadow-animation-cta 15s infinite;
+
+  color: white;
+  font-size: 0.6rem;
 }
 @keyframes bg-animation {
   0% {
-    border: 2px solid rgba(31, 38, 135, 0.687);
+    border: 0.5px solid rgba(31, 38, 135, 0.687);
   }
 
   20% {
-    border: 2px solid rgba(38, 196, 24, 0.687);
+    border: 0.5px solid rgba(38, 196, 24, 0.687);
   }
   40% {
-    border: 2px solid rgba(251, 255, 21, 0.884);
+    border: 0.5px solid rgba(251, 255, 21, 0.884);
   }
   60% {
-    border: 2px solid rgba(235, 71, 7, 0.986);
+    border: 0.5px solid rgba(235, 71, 7, 0.986);
   }
   80% {
-    border: 2px solid rgba(96, 5, 40, 0.687);
+    border: 0.5px solid rgba(96, 5, 40, 0.687);
   }
   100% {
-    border: 2px solid rgba(46, 225, 228, 0.687);
+    border: 0.5px solid rgba(46, 225, 228, 0.687);
   }
 }
 footer {
