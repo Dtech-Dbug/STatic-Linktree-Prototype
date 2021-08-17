@@ -92,12 +92,13 @@ img {
 }
 
 .cta-btns button {
-  background: rgba(228, 72, 72, 0.55);
+  /* background: rgba(228, 72, 72, 0.55);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18); */
+  border: 0.6px solid rgba(31, 38, 135, 0.687);
   width: 60%;
   height: 3rem;
   border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
@@ -107,23 +108,23 @@ img {
 }
 @keyframes bg-animation {
   0% {
-    background: rgba(31, 38, 135, 0.687);
+    border: 0.6px solid, rgba(31, 38, 135, 0.687);
   }
 
   20% {
-    background: rgba(38, 196, 24, 0.687);
+    border: 0.6px solid, rgba(38, 196, 24, 0.687);
   }
   40% {
-    background: rgba(251, 255, 21, 0.884);
+    border: 0.6px solid, rgba(251, 255, 21, 0.884);
   }
   60% {
-    background: rgba(235, 71, 7, 0.986);
+    border: 0.6px solid, rgba(235, 71, 7, 0.986);
   }
   80% {
-    background: rgba(96, 5, 40, 0.687);
+    border: 0.6px solid, rgba(96, 5, 40, 0.687);
   }
   100% {
-    background: rgba(46, 225, 228, 0.687);
+    border: 0.6px solid, rgba(46, 225, 228, 0.687);
   }
 }
 footer {
