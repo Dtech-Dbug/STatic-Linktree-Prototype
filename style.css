@@ -19,6 +19,7 @@
   --social-github: rgb(0, 216, 84);
   --social-twitter: rgb(1, 91, 137);
   --social-devPortfolio: rgb(18, 14, 38);
+  --social-npm: rgb(201, 38, 34);
 }
 
 body {
@@ -87,6 +88,14 @@ body {
 .devPortfolio {
   border: 2px solid var(--social-devPortfolio);
 }
+.npm {
+  border: 2px solid var(--social-npm);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
 html {
   font-size: 80%;
   height: 100vh;
