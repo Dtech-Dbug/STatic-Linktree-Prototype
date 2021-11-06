@@ -14,6 +14,7 @@
 }
 
 :root {
+  --primary-font-color: white;
   --avatarSize: 9rem;
   --socialiconsize: 4.5rem;
   --socialMediaCardContainer-Padding: 0.19rem;
@@ -48,13 +49,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 10rem;
 }
 
 .introContainer .introMsg {
-  color: white;
+  color: var(--primary-font-color);
   font-size: 1.3rem;
+}
+
+figcaption {
+  color: var(--primary-font-color);
 }
 .socialCardListContainer {
   display: flex;
@@ -79,7 +83,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: white;
+  color: var(--primary-font-color);
 
   height: 8rem;
   width: 8rem;
@@ -96,6 +100,7 @@ body {
 .socialCard i {
   /* height: 3rem; */
   font-size: var(--socialiconsize);
+  color: white;
 }
 
 .twitter {
@@ -112,7 +117,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: white;
+  color: var(--primary-font-color);
 }
 
 html {
@@ -129,7 +134,7 @@ html {
 header {
   text-align: center;
   font-family: "Merriweather", serif;
-  color: white;
+  color: var(--primary-font-color);
   transform: translateY(-20px);
 }
 header h1 {
@@ -223,7 +228,7 @@ img {
   }
 }
 footer {
-  color: white;
+  color: var(--primary-font-color);
   font-size: 1rem;
   font-family: "Merriweather", serif;
   font-size: 1rem;
