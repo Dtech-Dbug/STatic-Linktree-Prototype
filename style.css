@@ -14,7 +14,11 @@
 }
 
 :root {
+  --socialiconsize: 4.5rem;
   --socialMediaCardContainer-Padding: 0.19rem;
+  --social-github: rgb(0, 216, 84);
+  --social-twitter: rgb(1, 91, 137);
+  --social-devPortfolio: rgb(18, 14, 38);
 }
 
 body {
@@ -32,33 +36,57 @@ body {
   height: 80vh;
   width: 80vw;
 }
+.socialCardListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .socialCardContainer {
   height: 8.5rem;
   width: 8.5rem;
-  background-color: orange;
   border-radius: 12px;
   padding-iinline: var(--socialMediaCardContainer-Padding);
   padding-block: var(--socialMediaCardContainer-Padding);
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* background-color: orange; */
 }
 .socialCard {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: white;
 
   height: 8rem;
   width: 8rem;
 
+  border-radius: 12px;
+  border: 2px solid var(--social-github);
+
   backdrop-filter: blur(4px) saturate(180%);
-  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(17, 25, 40, 0.75);
-  border-radius: 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 12px;
 }
 
+.socialCard i {
+  /* height: 3rem; */
+  font-size: var(--socialiconsize);
+}
+
+.twitter {
+  border: 2px solid var(--social-twitter);
+}
+.linkedin {
+  border: 2px solid var(--social-twitter);
+}
+.devPortfolio {
+  border: 2px solid var(--social-devPortfolio);
+}
 html {
   font-size: 80%;
   height: 100vh;
