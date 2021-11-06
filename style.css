@@ -57,6 +57,11 @@ body {
   font-size: 1.3rem;
 }
 
+.introContainer .introMsg ul li {
+  margin: 0.5rem;
+  list-style: none;
+}
+
 figcaption {
   color: var(--primary-font-color);
 }
