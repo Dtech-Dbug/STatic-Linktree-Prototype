@@ -9,6 +9,13 @@
 	);
 	font-family: 'Merriweather', serif;
 	font-family: "Squada One", cursive;*/
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --socialMediaCardContainer-Padding: 0.19rem;
+}
 
 body {
   background-image: url("https://images.unsplash.com/photo-1529912626516-e58b23f44f1d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80");
@@ -16,9 +23,6 @@ body {
   background-size: 100%, 100%;
 }
 
-.cardParent {
-  display: flex;
-}
 .card {
   backdrop-filter: blur(4px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -26,6 +30,33 @@ body {
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.125);
   height: 80vh;
+  width: 80vw;
+}
+
+.socialCardContainer {
+  height: 8.5rem;
+  width: 8.5rem;
+  background-color: orange;
+  border-radius: 12px;
+  padding-iinline: var(--socialMediaCardContainer-Padding);
+  padding-block: var(--socialMediaCardContainer-Padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 8rem;
+  width: 8rem;
+
+  backdrop-filter: blur(4px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 html {
@@ -59,14 +90,6 @@ header h3 {
   margin: 0;
   padding: 0;
 } */
-
-.cta-btns {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-}
 
 @keyframes box-shadow-animation {
   0% {
