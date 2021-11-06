@@ -36,6 +36,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.125);
   height: 80vh;
   width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 .socialCardListContainer {
   display: flex;
