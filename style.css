@@ -168,3 +168,13 @@ img {
   border-radius: 50%;
   box-shadow: 10px 8px 32px 0 rgba(31, 38, 135, 0.687);
 }
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  ul {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+}
